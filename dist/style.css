@@ -1,3 +1,5 @@
+.header
+
 .employee-card {
     margin: 1.2 rem;
     border: none;
@@ -9,9 +11,17 @@
 }
 
 .card-title {
-    
+
 }
 
 .card-body {
     background-color: white;
+}
+
+.container {
+
+}
+
+.row {
+    
 }
