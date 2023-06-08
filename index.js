@@ -13,30 +13,30 @@ teamArray = [];
 
 // Function to initialize app
 function init () {
- function createTeam () {
+    function createTeam () {
 
-    inquirer.prompt ([{
-        type: "list",
-        message: "What type of employee do you want to add onto your team?",
-        choices: ["Manager", "Engineer", "Intern", "None"],
-        name: "addEmployeePrompt"
-    }]).then(function (userInput) {
-        switch(userInput.addEmployeePrompt) {
-            case "Manager":
-                addManager();
-                break;
-            case "Engineer":
-                addEngineer();
-                break;
-            case "Intern":
-                addIntern();
-                break;
+        inquirer.prompt ([{
+            type: "list",
+            message: "What type of employee do you want to add onto your team?",
+            choices: ["Manager", "Engineer", "Intern", "None"],
+            name: "addEmployeePrompt"
+        }]).then(function (userInput) {
+            switch(userInput.addEmployeePrompt) {
+                case "Manager":
+                    addManager();
+                    break;
+                case "Engineer":
+                    addEngineer();
+                    break;
+                case "Intern":
+                    addIntern();
+                    break;
 
-            default:
-                htmlBuilder();
-        }
-    })
- }
+                default:
+                    htmlBuilder();
+            }
+        })
+    }
 
     // Functions for employee prompts to add each employee type
     function addManager() {
@@ -126,6 +126,7 @@ function init () {
     }
 
     createTeam();
+
 }
 
 // Function call to initialize app

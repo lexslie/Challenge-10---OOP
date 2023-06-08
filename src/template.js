@@ -97,14 +97,16 @@ module.exports = team => {
     <body>
         <div class="container-fluid">
             <div class="row">
-                <div class="header">
-                    <h1>Team Profiles</h1>
+                <div class=" col-12 header mb-3 team-heading bg-danger">
+                    <h1 class="text-center text-white">Team Profiles</h1>
                 </div>
             </div>
         </div>
         <div class="container">
             <div class="row">
-                ${generateTeam(team)}
+                <div class="row team-area col-12 d-flex justify-content-center">
+                    ${generateTeam(team)}
+                </div>
             </div>
         </div>
     </body>
