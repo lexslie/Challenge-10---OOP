@@ -1,4 +1,6 @@
-.header
+.header {
+    border-radius: 0;
+}
 
 .employee-card {
     margin: 1.2 rem;
@@ -23,5 +25,5 @@
 }
 
 .row {
-    
+
 }

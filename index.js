@@ -4,11 +4,16 @@ const Intern = require("./lib/Intern");
 const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
+const OUTPUT_DIR = path.resolve(__dirname, "output");
+const outputPath = path.join(OUTPUT_DIR, "team.html");
+ 
 
 teamArray = [];
 
 // Function to initialize app
 function init () {
+ function createTeam () {
+
     inquirer.prompt ([{
         type: "list",
         message: "What type of employee do you want to add onto your team?",
@@ -30,6 +35,7 @@ function init () {
                 htmlBuilder();
         }
     })
+ }
 
     // Functions for employee prompts to add each employee type
     function addManager() {
@@ -55,7 +61,7 @@ function init () {
         ]).then(answers => {
         const manager = new Manager(answers.managerName, answers.managerId, answers.managerEmail, answers.managerOfficeNumber);
         teamArray.push(manager);
-        creatTeam();
+        createTeam();
         });
     }
 
@@ -82,7 +88,7 @@ function init () {
         ]).then(answers => {
         const engineer = new Engineer(answers.engineerName, answers.engineerId, answers.engineerEmail, answers.engineerGithub);
         teamArray.push(engineer);
-        creatTeam();
+        createTeam();
         });
     }
 
@@ -108,7 +114,7 @@ function init () {
         ]).then(answers => {
             const intern = new Intern(answers.internName, answers.internId, answers.internEmail, answers.internSchool);
             teamArray.push(intern);
-            creatTeam();
+            createTeam();
         });
     }
 
