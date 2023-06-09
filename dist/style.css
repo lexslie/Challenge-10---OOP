@@ -1,12 +1,19 @@
 .header {
     border-radius: 0;
+    color: white;
 }
 
 .employee-card {
-    margin: 1.2 rem;
-    border: none;
+    margin: 2%;
+    box-shadow: gray 3px 3px 3px;
+    
 }
 
 .card-body {
-    background-color: white;
+    background-color: rgb(242, 245, 249);
+}
+
+.card-header {
+    background-color: rgb(29, 88, 236);
+    color: white;
 }

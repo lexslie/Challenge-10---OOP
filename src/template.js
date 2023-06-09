@@ -4,7 +4,7 @@ const generateTeam = team => {
     const generateManager = manager => {
         return `
         <div class="card employee-card"> 
-            <div class="card-header">
+            <div class="card-header bg-primary">
                 <h2 class="card-title">${manager.getName()}</h2>
                 <h3 class="card-title">${manager.getRole()}</h3>
             </div>
@@ -15,7 +15,7 @@ const generateTeam = team => {
                     <li class="list-group-item">Office Number: ${manager.getofficeNumber()}</li>
                 </ul>
             </div>
-        </div>;
+        </div>
         `;
     };
 
@@ -23,7 +23,7 @@ const generateTeam = team => {
     const generateEngineer = engineer => {
         return `
         <div class="card employee-card">
-            <div class="card-header">
+            <div class="card-header bg-primary">
                 <h2 class="card-title">${engineer.getName()}</h2>
                 <h3 class="card-title">${engineer.getRole()}</h3> 
             </div>
@@ -34,7 +34,7 @@ const generateTeam = team => {
                     <li class="list-group-item">GitHub Username: ${engineer.getGithub()}</li>
                 </ul>
             </div>
-        </div>;
+        </div>
         `;
     };
 
@@ -42,7 +42,7 @@ const generateTeam = team => {
     const generateIntern = intern => {
         return `
         <div class="card employee-card">
-            <div class="card-header">
+            <div class="card-header bg-primary">
                 <h2 class="card-title">${intern.getName()}</h2>
                 <h3 class="card-title">${intern.getRole()}</h3> 
             </div>
@@ -53,7 +53,7 @@ const generateTeam = team => {
                     <li class="list-group-item">School: ${intern.getSchool()}</li>
                 </ul>
             </div>
-        </div>;
+        </div>
         `;
     };
 
@@ -98,7 +98,7 @@ module.exports = team => {
         <div class="container-fluid">
             <div class="row">
                 <div class=" col-12 header mb-3 team-heading bg-danger">
-                    <h1 class="text-center text-white">Team Profiles</h1>
+                    <h1 class="text-center">Team Profiles</h1>
                 </div>
             </div>
         </div>
