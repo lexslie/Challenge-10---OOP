@@ -2,7 +2,7 @@ const generateTeam = team => {
     
     // Generating manager card
     const generateManager = manager => {
-        `
+        return `
         <div class="card employee-card"> 
             <div class="card-header">
                 <h2 class="card-title">${manager.getName()}</h2>
@@ -21,7 +21,7 @@ const generateTeam = team => {
 
     // Generating engineer card
     const generateEngineer = engineer => {
-        `
+        return `
         <div class="card employee-card">
             <div class="card-header">
                 <h2 class="card-title">${engineer.getName()}</h2>
@@ -40,7 +40,7 @@ const generateTeam = team => {
 
     // Generating intern card
     const generateIntern = intern => {
-        `
+        return `
         <div class="card employee-card">
             <div class="card-header">
                 <h2 class="card-title">${intern.getName()}</h2>
@@ -82,8 +82,8 @@ const generateTeam = team => {
 module.exports = team => {
 
     return `
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+ <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -110,5 +110,5 @@ module.exports = team => {
             </div>
         </div>
     </body>
-</html>`;
+ </html>`;
 };

@@ -32,8 +32,9 @@ function init () {
                     addIntern();
                     break;
 
-                default:
+                case "None":
                     htmlBuilder();
+                    break;
             }
         })
     }
