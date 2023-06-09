@@ -48,7 +48,7 @@ The following image shows a mock-up of the generated HTML’s appearance and fun
 
 ![HTML webpage titled “My Team” features five boxes listing employee names, titles, and other key info.](./assets/Screenshot%202023-06-08%20at%208.39.29%20PM.png)
 
-The styling in the image is just an example, so feel free to add your own.
+[Demo video link:](https://drive.google.com/file/d/13O-GYR8Qv8kF7Iy7YO86v2CDGeZyIdIc/view)
 
 ## Getting Started
 
